@@ -10,6 +10,8 @@
 		1F7FA4001E315D5D00894E64 /* KaushikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */; };
 		1F7FA4011E315D5D00894E64 /* KaushikViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */; };
 		2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3407841E31477A000B2FE2 /* CustomImageView.m */; };
+		2C347F061E315BF2001F01AE /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347F051E315BF2001F01AE /* QuestionViewController.m */; };
+		2C347F081E315C03001F01AE /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C347F071E315C03001F01AE /* QuestionViewController.xib */; };
 		2C40DB061E3153AC00EF2668 /* kaushik-biswas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C40DB051E3153AC00EF2668 /* kaushik-biswas.jpg */; };
 		E894FD501E31385C00EF01C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD4F1E31385C00EF01C7 /* main.m */; };
 		E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD521E31385C00EF01C7 /* AppDelegate.m */; };
@@ -28,6 +30,9 @@
 		1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KaushikViewController.xib; sourceTree = "<group>"; };
 		2C3407831E31477A000B2FE2 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
 		2C3407841E31477A000B2FE2 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		2C347F041E315BF2001F01AE /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		2C347F051E315BF2001F01AE /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		2C347F071E315C03001F01AE /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		2C40DB051E3153AC00EF2668 /* kaushik-biswas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kaushik-biswas.jpg"; sourceTree = "<group>"; };
 		E894FD4B1E31385C00EF01C7 /* TriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E894FD4F1E31385C00EF01C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +81,16 @@
 			name = CustomClasses;
 			sourceTree = "<group>";
 		};
+		2C347F031E315BC1001F01AE /* QuestionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C347F071E315C03001F01AE /* QuestionViewController.xib */,
+				2C347F041E315BF2001F01AE /* QuestionViewController.h */,
+				2C347F051E315BF2001F01AE /* QuestionViewController.m */,
+			);
+			name = QuestionViewController;
+			sourceTree = "<group>";
+		};
 		E894FD421E31385C00EF01C7 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				E894FD511E31385C00EF01C7 /* AppDelegate.h */,
+				E894FD5F1E31385C00EF01C7 /* LaunchScreen.storyboard */,
+				E894FD571E31385C00EF01C7 /* Main.storyboard */,
+				2C347F031E315BC1001F01AE /* QuestionViewController */,
 				2C3407821E31474D000B2FE2 /* CustomClasses */,
 				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
 				1F7FA3F31E315C5200894E64 /* KaushikVC */,
@@ -107,7 +125,6 @@
 				E894FD6F1E313E6B00EF01C7 /* JService.m */,
 				E894FD571E31385C00EF01C7 /* Main.storyboard */,
 				E894FD5D1E31385C00EF01C7 /* Assets.xcassets */,
-				E894FD5F1E31385C00EF01C7 /* LaunchScreen.storyboard */,
 				E894FD621E31385C00EF01C7 /* Info.plist */,
 				E894FD5A1E31385C00EF01C7 /* TriviaGame.xcdatamodeld */,
 				E894FD4E1E31385C00EF01C7 /* Supporting Files */,
@@ -188,6 +205,7 @@
 				1F7FA4011E315D5D00894E64 /* KaushikViewController.xib in Resources */,
 				E894FD591E31385C00EF01C7 /* Main.storyboard in Resources */,
 				2C40DB061E3153AC00EF2668 /* kaushik-biswas.jpg in Resources */,
+				2C347F081E315C03001F01AE /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +219,7 @@
 				2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */,
 				1F7FA4001E315D5D00894E64 /* KaushikViewController.m in Sources */,
 				E894FD5C1E31385C00EF01C7 /* TriviaGame.xcdatamodeld in Sources */,
+				2C347F061E315BF2001F01AE /* QuestionViewController.m in Sources */,
 				E894FD561E31385C00EF01C7 /* ViewController.m in Sources */,
 				E894FD731E31559D00EF01C7 /* TriviaQuestion.m in Sources */,
 				E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */,

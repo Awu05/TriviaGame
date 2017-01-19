@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomImageView.h"
-#import "QuestionViewController.h"
 #import "TriviaQuestion.h"
 #import "JService.h"
 

@@ -5,8 +5,6 @@
 //  Created by Andy Wu on 1/19/17.
 //  Copyright © 2017 TrivGame. All rights reserved.
 //
-//
-//
 
 #import "ViewController.h"
 
@@ -23,6 +21,7 @@
     // Andy
     self.jServiceArray = [[NSMutableArray alloc] init];
     self.questionsArry = [[NSMutableArray alloc] init];
+    
     [self getJServiceCategory];
     // Andy End
     
