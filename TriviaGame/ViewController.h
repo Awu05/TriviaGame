@@ -49,10 +49,38 @@
 @property (retain, nonatomic) NSMutableArray *questionsArry;
 @property (retain, nonatomic) NSMutableArray *jServiceArray;
 
+@property (retain, nonatomic) NSMutableArray *randArray;
+
 - (void) getJServiceCategory;
 - (void) parseJServiceData: (NSData*) data;
 - (void) getQuestion: (JService*) category;
 - (void) parseQuestion: (NSData*) data;
+
+@property (weak, nonatomic) IBOutlet UILabel *category1Title;
+- (IBAction)cat1FirstBtn:(id)sender;
+- (IBAction)cat1SecondBtn:(id)sender;
+- (IBAction)cat1ThirdBtn:(id)sender;
+- (IBAction)cat1FourthBtn:(id)sender;
+- (IBAction)cat1FifthBtn:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *category2Title;
+- (IBAction)cat2FirstBtn:(id)sender;
+- (IBAction)cat2SecondBtn:(id)sender;
+- (IBAction)cat2ThirdBtn:(id)sender;
+- (IBAction)cat2FourthBtn:(id)sender;
+- (IBAction)cat2FifthBtn:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *category3Title;
+- (IBAction)cat3FirstBtn:(id)sender;
+- (IBAction)cat3SecondBtn:(id)sender;
+- (IBAction)cat3ThirdBtn:(id)sender;
+- (IBAction)cat3FourthBtn:(id)sender;
+- (IBAction)cat3FifthBtn:(id)sender;
+
+
+
+
+
 // Andy End
 @end
 

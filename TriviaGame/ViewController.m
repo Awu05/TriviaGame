@@ -9,6 +9,7 @@
 //
 
 #import "ViewController.h"
+#include <stdlib.h>
 
 @interface ViewController ()
 
@@ -24,6 +25,7 @@
     self.jServiceArray = [[NSMutableArray alloc] init];
     self.questionsArry = [[NSMutableArray alloc] init];
     [self getJServiceCategory];
+
     // Andy End
     
     // ==============================================
@@ -64,6 +66,35 @@
 // JC Methods End
 
 // Andy Stuff
+
+- (void) startGame {
+    [self generateRandNum:1 :10 ];
+    
+    for (int i = 0; i < 3; i++) {
+        JService *category;
+        int num = 0;
+        switch (i) {
+            case 0:
+                num = [self.randArray[i] intValue];
+                category = self.jServiceArray[num];
+                self.category1Title.text = category.title;
+                break;
+            case 1:
+                num = [self.randArray[i] intValue];
+                category = self.jServiceArray[num];
+                self.category2Title.text = category.title;
+                break;
+            case 2:
+                num = [self.randArray[i] intValue];
+                category = self.jServiceArray[num];
+                self.category3Title.text = category.title;
+                break;
+            default:
+                break;
+        }
+    }
+}
+
 - (void) getJServiceCategory {
     NSString *jServiceURL = @"http://jservice.io/api/categories?count=10";
     
@@ -100,6 +131,7 @@
         [self.jServiceArray addObject:newEntry];
     }
     
+    [self startGame];
     //NSLog(@"%@\n Count: %lu", self.jServiceArray, (unsigned long)[self.jServiceArray count]);
     
     //[self getQuestion:self.jServiceArray[1]];
@@ -153,6 +185,65 @@
     //NSLog(@"Question: %@\nAnswer:%@\nValue:%d", test.question, test.answer, test.value);
     
 }
+
+-(void) generateRandNum :(int)rangeLow :(int)rangeHigh{
+    NSMutableArray *unqArray=[[NSMutableArray alloc] init];
+    int randNum = arc4random() % (rangeHigh-rangeLow+1) + rangeLow;
+    int counter=0;
+    while (counter<rangeHigh-rangeLow) {
+        if (![unqArray containsObject:[NSNumber numberWithInt:randNum]]) {
+            [unqArray addObject:[NSNumber numberWithInt:randNum]];
+            counter++;
+        }else{
+            randNum = arc4random() % (rangeHigh-rangeLow+1) + rangeLow;
+        }
+        
+    }
+    self.randArray = unqArray;
+}
+
 // Andy End
 
+- (IBAction)cat1FirstBtn:(id)sender {
+}
+
+- (IBAction)cat1SecondBtn:(id)sender {
+}
+
+- (IBAction)cat1ThirdBtn:(id)sender {
+}
+
+- (IBAction)cat1FourthBtn:(id)sender {
+}
+
+- (IBAction)cat1FifthBtn:(id)sender {
+}
+- (IBAction)cat2FirstBtn:(id)sender {
+}
+
+- (IBAction)cat2SecondBtn:(id)sender {
+}
+
+- (IBAction)cat2ThirdBtn:(id)sender {
+}
+
+- (IBAction)cat2FourthBtn:(id)sender {
+}
+
+- (IBAction)cat2FifthBtn:(id)sender {
+}
+- (IBAction)cat3FirstBtn:(id)sender {
+}
+
+- (IBAction)cat3SecondBtn:(id)sender {
+}
+
+- (IBAction)cat3ThirdBtn:(id)sender {
+}
+
+- (IBAction)cat3FourthBtn:(id)sender {
+}
+
+- (IBAction)cat3FifthBtn:(id)sender {
+}
 @end

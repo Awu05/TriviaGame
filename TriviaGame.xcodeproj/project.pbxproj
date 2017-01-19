@@ -111,18 +111,14 @@
 			isa = PBXGroup;
 			children = (
 				E894FD511E31385C00EF01C7 /* AppDelegate.h */,
+				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
 				E894FD5F1E31385C00EF01C7 /* LaunchScreen.storyboard */,
-				E894FD571E31385C00EF01C7 /* Main.storyboard */,
 				2C347F031E315BC1001F01AE /* QuestionViewController */,
 				2C3407821E31474D000B2FE2 /* CustomClasses */,
-				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
 				1F7FA3F31E315C5200894E64 /* KaushikVC */,
+				E894FD741E316EB400EF01C7 /* JServiceData */,
 				E894FD541E31385C00EF01C7 /* ViewController.h */,
 				E894FD551E31385C00EF01C7 /* ViewController.m */,
-				E894FD711E31559D00EF01C7 /* TriviaQuestion.h */,
-				E894FD721E31559D00EF01C7 /* TriviaQuestion.m */,
-				E894FD6E1E313E6B00EF01C7 /* JService.h */,
-				E894FD6F1E313E6B00EF01C7 /* JService.m */,
 				E894FD571E31385C00EF01C7 /* Main.storyboard */,
 				E894FD5D1E31385C00EF01C7 /* Assets.xcassets */,
 				E894FD621E31385C00EF01C7 /* Info.plist */,
@@ -139,6 +135,17 @@
 				E894FD4F1E31385C00EF01C7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E894FD741E316EB400EF01C7 /* JServiceData */ = {
+			isa = PBXGroup;
+			children = (
+				E894FD711E31559D00EF01C7 /* TriviaQuestion.h */,
+				E894FD721E31559D00EF01C7 /* TriviaQuestion.m */,
+				E894FD6E1E313E6B00EF01C7 /* JService.h */,
+				E894FD6F1E313E6B00EF01C7 /* JService.m */,
+			);
+			name = JServiceData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
