@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7FA4001E315D5D00894E64 /* KaushikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */; };
+		1F7FA4011E315D5D00894E64 /* KaushikViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */; };
 		2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3407841E31477A000B2FE2 /* CustomImageView.m */; };
 		2C347F061E315BF2001F01AE /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C347F051E315BF2001F01AE /* QuestionViewController.m */; };
 		2C347F081E315C03001F01AE /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C347F071E315C03001F01AE /* QuestionViewController.xib */; };
@@ -23,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F7FA3FD1E315D5D00894E64 /* KaushikViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaushikViewController.h; sourceTree = "<group>"; };
+		1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaushikViewController.m; sourceTree = "<group>"; };
+		1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KaushikViewController.xib; sourceTree = "<group>"; };
 		2C3407831E31477A000B2FE2 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
 		2C3407841E31477A000B2FE2 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 		2C347F041E315BF2001F01AE /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
@@ -57,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F7FA3F31E315C5200894E64 /* KaushikVC */ = {
+			isa = PBXGroup;
+			children = (
+				1F7FA3FD1E315D5D00894E64 /* KaushikViewController.h */,
+				1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */,
+				1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */,
+			);
+			name = KaushikVC;
+			sourceTree = "<group>";
+		};
 		2C3407821E31474D000B2FE2 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +116,7 @@
 				2C347F031E315BC1001F01AE /* QuestionViewController */,
 				2C3407821E31474D000B2FE2 /* CustomClasses */,
 				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
+				1F7FA3F31E315C5200894E64 /* KaushikVC */,
 				E894FD541E31385C00EF01C7 /* ViewController.h */,
 				E894FD551E31385C00EF01C7 /* ViewController.m */,
 				E894FD711E31559D00EF01C7 /* TriviaQuestion.h */,
@@ -186,6 +202,7 @@
 			files = (
 				E894FD611E31385C00EF01C7 /* LaunchScreen.storyboard in Resources */,
 				E894FD5E1E31385C00EF01C7 /* Assets.xcassets in Resources */,
+				1F7FA4011E315D5D00894E64 /* KaushikViewController.xib in Resources */,
 				E894FD591E31385C00EF01C7 /* Main.storyboard in Resources */,
 				2C40DB061E3153AC00EF2668 /* kaushik-biswas.jpg in Resources */,
 				2C347F081E315C03001F01AE /* QuestionViewController.xib in Resources */,
@@ -200,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */,
+				1F7FA4001E315D5D00894E64 /* KaushikViewController.m in Sources */,
 				E894FD5C1E31385C00EF01C7 /* TriviaGame.xcdatamodeld in Sources */,
 				2C347F061E315BF2001F01AE /* QuestionViewController.m in Sources */,
 				E894FD561E31385C00EF01C7 /* ViewController.m in Sources */,
