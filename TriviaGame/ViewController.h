@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TriviaQuestion.h"
+#import "JService.h"
 
 @interface ViewController : UIViewController
 
+@property (retain, nonatomic) NSMutableArray *questionsArry;
+@property (retain, nonatomic) NSMutableArray *jServiceArray;
+
+- (void) getJServiceCategory;
+- (void) parseJServiceData: (NSData*) data;
+- (void) getQuestion: (JService*) category;
+- (void) parseQuestion: (NSData*) data;
 
 @end
 
