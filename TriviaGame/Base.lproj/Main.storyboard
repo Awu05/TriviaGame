@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uQR-Uf-v3D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uQR-Uf-v3D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -282,7 +282,6 @@
                         <outlet property="catTitleLabel1" destination="Wg5-Kw-XTT" id="gZJ-H6-Lhh"/>
                         <outlet property="catTitleLabel2" destination="TDJ-St-Vbl" id="V2a-sA-ggP"/>
                         <outlet property="catTitleLabel3" destination="ytu-zX-P0W" id="l1S-ES-Fs4"/>
-                        <outlet property="firstCatTitleLabel" destination="Wg5-Kw-XTT" id="Cwp-H1-nxY"/>
                         <outlet property="player1NameLabel" destination="HYT-XR-nnX" id="7Yc-mU-u1T"/>
                         <outlet property="player1ProfImageView" destination="HNC-pc-XMB" id="2cK-xF-1Jp"/>
                         <outlet property="player1ScoreLabel" destination="meo-tT-4lJ" id="z3o-cA-PPJ"/>
@@ -338,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSF-hv-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2013.5999999999999" y="1209.4452773613195"/>
+            <point key="canvasLocation" x="1716" y="1045"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YcA-7g-kK2">
