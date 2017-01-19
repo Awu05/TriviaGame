@@ -31,6 +31,7 @@
     // ==============================================
     
     // Nav setup
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     self.title = @"Kaushikpardy";
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(gameReset)];
     
@@ -61,6 +62,12 @@
     [self.navigationController pushViewController:questionVC animated:YES];
     
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 // JC Methods End
 
 // Andy Stuff
