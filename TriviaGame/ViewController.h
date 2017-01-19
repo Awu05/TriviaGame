@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomImageView.h"
+#import "QuestionViewController.h"
 
 @interface ViewController : UIViewController
 
