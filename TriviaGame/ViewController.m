@@ -17,13 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    // JC
+    
+    
+    
+    // JC End
 }
 
+// ================================================================================================
+//
+#pragma mark - JC's Methods
+//
+// ================================================================================================
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
+// JC Methods End
 @end
