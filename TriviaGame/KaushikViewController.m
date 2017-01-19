@@ -17,8 +17,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.counterSecond = 10;
-    // Do any additional setup after loading the view from its nib.
     
+    // JC: These are responses Kaushik give
+    self.responses = [NSArray arrayWithObjects:@"I don't know the answer...",
+                                               @"I think I'm going to pass on this one.",
+                                               @"No idea...",
+                                               @"This question is below me", nil];
+    // Response Label
+    self.kResponseLabel.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.kResponseLabel.layer.borderWidth = 1.0;
+    self.kResponseLabel.layer.cornerRadius = 5;
+    
+    // Randomized Responses
+    NSInteger responseID = arc4random() % 5;
+    NSString *answerString = @""; // needs to be updated with the right var
+    if (responseID == 4) {
+        self.kResponseLabel.text = [NSString stringWithFormat:@"This is easy, the answer is %@", answerString];
+    }
+    else {
+        self.kResponseLabel.text = [self.responses objectAtIndex:(int) responseID];
+    }
+
     
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     

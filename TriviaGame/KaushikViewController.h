@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomImageView.h"
 
 @interface KaushikViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property int counterSecond;
+
+@property (strong, nonatomic) NSArray *responses;
+@property (weak, nonatomic) IBOutlet CustomImageView *kProfileImageView;
+@property (weak, nonatomic) IBOutlet UILabel *kResponseLabel;
 
 
 @end
