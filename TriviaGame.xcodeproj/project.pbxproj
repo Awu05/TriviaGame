@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7FA3F21E31451A00894E64 /* kaushik-biswas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F7FA3F11E31451A00894E64 /* kaushik-biswas.jpg */; };
 		E894FD501E31385C00EF01C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD4F1E31385C00EF01C7 /* main.m */; };
 		E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD521E31385C00EF01C7 /* AppDelegate.m */; };
 		E894FD561E31385C00EF01C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD551E31385C00EF01C7 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F7FA3F11E31451A00894E64 /* kaushik-biswas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kaushik-biswas.jpg"; path = "../../../../../kaushik-biswas.jpg"; sourceTree = "<group>"; };
 		E894FD4B1E31385C00EF01C7 /* TriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E894FD4F1E31385C00EF01C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E894FD511E31385C00EF01C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		E894FD4E1E31385C00EF01C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F7FA3F11E31451A00894E64 /* kaushik-biswas.jpg */,
 				E894FD4F1E31385C00EF01C7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -144,6 +147,7 @@
 				E894FD611E31385C00EF01C7 /* LaunchScreen.storyboard in Resources */,
 				E894FD5E1E31385C00EF01C7 /* Assets.xcassets in Resources */,
 				E894FD591E31385C00EF01C7 /* Main.storyboard in Resources */,
+				1F7FA3F21E31451A00894E64 /* kaushik-biswas.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 				E894FD671E31385C00EF01C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
