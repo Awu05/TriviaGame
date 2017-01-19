@@ -65,9 +65,9 @@
 		1F7FA3F31E315C5200894E64 /* KaushikVC */ = {
 			isa = PBXGroup;
 			children = (
+				1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */,
 				1F7FA3FD1E315D5D00894E64 /* KaushikViewController.h */,
 				1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */,
-				1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */,
 			);
 			name = KaushikVC;
 			sourceTree = "<group>";
@@ -112,7 +112,6 @@
 			children = (
 				E894FD511E31385C00EF01C7 /* AppDelegate.h */,
 				E894FD5F1E31385C00EF01C7 /* LaunchScreen.storyboard */,
-				E894FD571E31385C00EF01C7 /* Main.storyboard */,
 				2C347F031E315BC1001F01AE /* QuestionViewController */,
 				2C3407821E31474D000B2FE2 /* CustomClasses */,
 				E894FD521E31385C00EF01C7 /* AppDelegate.m */,

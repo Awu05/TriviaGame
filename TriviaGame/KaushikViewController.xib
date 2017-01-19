@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaushik-biswas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0Ke-Za-Psf" customClass="CustomImageView">
-                    <rect key="frame" x="87" y="183.5" width="200" height="200"/>
+                    <rect key="frame" x="87" y="153.5" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="DJ2-28-yte"/>
                         <constraint firstAttribute="width" constant="200" id="QJn-Mw-ZxM"/>
@@ -40,7 +40,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx9-ZX-q6I">
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gx9-ZX-q6I">
                     <rect key="frame" x="99" y="123" width="176" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -48,7 +48,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Kaushik's response to the question." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGf-9v-DYR">
-                    <rect key="frame" x="20" y="403.5" width="335" height="100"/>
+                    <rect key="frame" x="20" y="373.5" width="335" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="MjH-al-nYt"/>
                     </constraints>
@@ -61,7 +61,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="pv9-kI-wp1" secondAttribute="trailing" id="2oT-IG-bUc"/>
                 <constraint firstItem="xGf-9v-DYR" firstAttribute="top" secondItem="0Ke-Za-Psf" secondAttribute="bottom" constant="20" id="AIS-Kd-PO7"/>
-                <constraint firstItem="0Ke-Za-Psf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="IW3-un-UZv"/>
+                <constraint firstItem="0Ke-Za-Psf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="IW3-un-UZv"/>
                 <constraint firstAttribute="trailing" secondItem="xGf-9v-DYR" secondAttribute="trailing" constant="20" id="Kve-xa-Rgk"/>
                 <constraint firstAttribute="bottom" secondItem="pv9-kI-wp1" secondAttribute="bottom" id="S81-Tk-hzE"/>
                 <constraint firstItem="xGf-9v-DYR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TQM-Qm-UEf"/>
