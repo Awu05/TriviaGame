@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomImageView.h"
-#import "QuestionViewController.h"
+#import "TriviaQuestion.h"
+#import "JService.h"
 
 @interface ViewController : UIViewController
 
@@ -42,5 +43,15 @@
 
 //
 // JC Properties End
+
+// Andy Stuff
+@property (retain, nonatomic) NSMutableArray *questionsArry;
+@property (retain, nonatomic) NSMutableArray *jServiceArray;
+
+- (void) getJServiceCategory;
+- (void) parseJServiceData: (NSData*) data;
+- (void) getQuestion: (JService*) category;
+- (void) parseQuestion: (NSData*) data;
+// Andy End
 @end
 
