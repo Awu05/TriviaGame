@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3407841E31477A000B2FE2 /* CustomImageView.m */; };
 		E894FD501E31385C00EF01C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD4F1E31385C00EF01C7 /* main.m */; };
 		E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD521E31385C00EF01C7 /* AppDelegate.m */; };
 		E894FD561E31385C00EF01C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD551E31385C00EF01C7 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3407831E31477A000B2FE2 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		2C3407841E31477A000B2FE2 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 		E894FD4B1E31385C00EF01C7 /* TriviaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E894FD4F1E31385C00EF01C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E894FD511E31385C00EF01C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3407821E31474D000B2FE2 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2C3407831E31477A000B2FE2 /* CustomImageView.h */,
+				2C3407841E31477A000B2FE2 /* CustomImageView.m */,
+			);
+			name = CustomClasses;
+			sourceTree = "<group>";
+		};
 		E894FD421E31385C00EF01C7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E894FD511E31385C00EF01C7 /* AppDelegate.h */,
+				2C3407821E31474D000B2FE2 /* CustomClasses */,
 				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
 				E894FD541E31385C00EF01C7 /* ViewController.h */,
 				E894FD551E31385C00EF01C7 /* ViewController.m */,
@@ -113,7 +126,7 @@
 				TargetAttributes = {
 					E894FD4A1E31385C00EF01C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = R52DFB482J;
+						DevelopmentTeam = 23CD7FLSSH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -154,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */,
 				E894FD5C1E31385C00EF01C7 /* TriviaGame.xcdatamodeld in Sources */,
 				E894FD561E31385C00EF01C7 /* ViewController.m in Sources */,
 				E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */,
@@ -277,8 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = 23CD7FLSSH;
 				INFOPLIST_FILE = TriviaGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TrivGame.TriviaGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,8 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R52DFB482J;
+				DEVELOPMENT_TEAM = 23CD7FLSSH;
 				INFOPLIST_FILE = TriviaGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TrivGame.TriviaGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,6 +332,7 @@
 				E894FD671E31385C00EF01C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

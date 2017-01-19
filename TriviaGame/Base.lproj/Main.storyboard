@@ -188,8 +188,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQ3-7y-8Qg">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="200"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-pc-XMB">
-                                                <rect key="frame" x="43" y="30" width="100" height="100"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-pc-XMB" customClass="CustomImageView">
+                                                <rect key="frame" x="43.5" y="30" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="cGV-pY-gGn"/>
                                                     <constraint firstAttribute="height" constant="100" id="kLu-f8-DAb"/>
@@ -205,7 +205,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYT-XR-nnX">
-                                                <rect key="frame" x="72.5" y="168" width="42.5" height="18"/>
+                                                <rect key="frame" x="73" y="168" width="42.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -223,9 +223,43 @@
                                             <constraint firstItem="HNC-pc-XMB" firstAttribute="centerY" secondItem="GQ3-7y-8Qg" secondAttribute="centerY" constant="-20" id="xDm-6c-js7"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1U-vE-phN">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-cV-HRt">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="200"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WS6-UI-QJg" customClass="CustomImageView">
+                                                <rect key="frame" x="43.5" y="30" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="ISP-YI-EOX"/>
+                                                    <constraint firstAttribute="width" constant="100" id="uRZ-eI-8eT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g60-2v-CfR">
+                                                <rect key="frame" x="10" y="135" width="167.5" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Muo-OF-cR1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaushik" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-5Z-OL0">
+                                                <rect key="frame" x="67" y="168" width="54" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="pM1-5Z-OL0" firstAttribute="top" secondItem="g60-2v-CfR" secondAttribute="bottom" constant="5" id="0yE-nO-4Gi"/>
+                                            <constraint firstItem="WS6-UI-QJg" firstAttribute="centerX" secondItem="hK6-cV-HRt" secondAttribute="centerX" id="LSX-Xf-TYU"/>
+                                            <constraint firstAttribute="trailing" secondItem="g60-2v-CfR" secondAttribute="trailing" constant="10" id="PHX-5D-lts"/>
+                                            <constraint firstItem="WS6-UI-QJg" firstAttribute="centerY" secondItem="hK6-cV-HRt" secondAttribute="centerY" constant="-20" id="WsJ-Pq-rh1"/>
+                                            <constraint firstItem="g60-2v-CfR" firstAttribute="centerX" secondItem="hK6-cV-HRt" secondAttribute="centerX" id="XOH-ZC-0vG"/>
+                                            <constraint firstItem="g60-2v-CfR" firstAttribute="top" secondItem="WS6-UI-QJg" secondAttribute="bottom" constant="5" id="c1T-cP-w9n"/>
+                                            <constraint firstItem="g60-2v-CfR" firstAttribute="leading" secondItem="hK6-cV-HRt" secondAttribute="leading" constant="10" id="gyS-1E-ixT"/>
+                                            <constraint firstItem="pM1-5Z-OL0" firstAttribute="centerX" secondItem="hK6-cV-HRt" secondAttribute="centerX" id="zEf-e3-vSv"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -243,6 +277,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XWW-N1-fRd"/>
+                    <connections>
+                        <outlet property="catTitleLabel1" destination="Wg5-Kw-XTT" id="gZJ-H6-Lhh"/>
+                        <outlet property="catTitleLabel2" destination="TDJ-St-Vbl" id="V2a-sA-ggP"/>
+                        <outlet property="catTitleLabel3" destination="ytu-zX-P0W" id="l1S-ES-Fs4"/>
+                        <outlet property="firstCatTitleLabel" destination="Wg5-Kw-XTT" id="Cwp-H1-nxY"/>
+                        <outlet property="player1NameLabel" destination="HYT-XR-nnX" id="7Yc-mU-u1T"/>
+                        <outlet property="player1ProfImageView" destination="HNC-pc-XMB" id="2cK-xF-1Jp"/>
+                        <outlet property="player1ScoreLabel" destination="meo-tT-4lJ" id="z3o-cA-PPJ"/>
+                        <outlet property="player2NameLabel" destination="pM1-5Z-OL0" id="tmR-DK-1Al"/>
+                        <outlet property="player2ProfImageView" destination="WS6-UI-QJg" id="jYn-pa-2Sy"/>
+                        <outlet property="player2ScoreLabel" destination="g60-2v-CfR" id="Y4m-dh-yZH"/>
+                        <outlet property="questionBtn1c1000" destination="hA8-7c-yn7" id="9wI-Jp-nNM"/>
+                        <outlet property="questionBtn1c200" destination="R9f-QJ-C9K" id="Tjd-lF-KBs"/>
+                        <outlet property="questionBtn1c400" destination="fnH-pg-dwV" id="31i-DW-ab2"/>
+                        <outlet property="questionBtn1c600" destination="PHr-U9-Sij" id="KpV-1b-tjG"/>
+                        <outlet property="questionBtn1c800" destination="dSE-oH-eRW" id="arI-Fs-z9M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,7 +304,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQR-Uf-v3D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kRu-xk-oWb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kRu-xk-oWb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.74117647060000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

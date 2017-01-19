@@ -21,8 +21,9 @@
     
     
     // JC
-    
-    
+    // Player Profile Image
+    self.player1ProfImageView.image = [UIImage imageNamed:@"kaushik-biswas"];
+
     
     // JC End
 }
