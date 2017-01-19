@@ -16,8 +16,8 @@
 		E894FD5C1E31385C00EF01C7 /* TriviaGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E894FD5A1E31385C00EF01C7 /* TriviaGame.xcdatamodeld */; };
 		E894FD5E1E31385C00EF01C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E894FD5D1E31385C00EF01C7 /* Assets.xcassets */; };
 		E894FD611E31385C00EF01C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E894FD5F1E31385C00EF01C7 /* LaunchScreen.storyboard */; };
-		E894FD6D1E313A9900EF01C7 /* TriviaQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD6C1E313A9900EF01C7 /* TriviaQuestion.m */; };
 		E894FD701E313E6B00EF01C7 /* JService.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD6F1E313E6B00EF01C7 /* JService.m */; };
+		E894FD731E31559D00EF01C7 /* TriviaQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E894FD721E31559D00EF01C7 /* TriviaQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +35,10 @@
 		E894FD5D1E31385C00EF01C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E894FD601E31385C00EF01C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E894FD621E31385C00EF01C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E894FD6B1E313A9900EF01C7 /* TriviaQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TriviaQuestion.h; path = ../TriviaQuestion.h; sourceTree = "<group>"; };
-		E894FD6C1E313A9900EF01C7 /* TriviaQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TriviaQuestion.m; path = ../TriviaQuestion.m; sourceTree = "<group>"; };
 		E894FD6E1E313E6B00EF01C7 /* JService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JService.h; sourceTree = "<group>"; };
 		E894FD6F1E313E6B00EF01C7 /* JService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JService.m; sourceTree = "<group>"; };
+		E894FD711E31559D00EF01C7 /* TriviaQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriviaQuestion.h; sourceTree = "<group>"; };
+		E894FD721E31559D00EF01C7 /* TriviaQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriviaQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 				E894FD521E31385C00EF01C7 /* AppDelegate.m */,
 				E894FD541E31385C00EF01C7 /* ViewController.h */,
 				E894FD551E31385C00EF01C7 /* ViewController.m */,
-				E894FD6B1E313A9900EF01C7 /* TriviaQuestion.h */,
-				E894FD6C1E313A9900EF01C7 /* TriviaQuestion.m */,
+				E894FD711E31559D00EF01C7 /* TriviaQuestion.h */,
+				E894FD721E31559D00EF01C7 /* TriviaQuestion.m */,
 				E894FD6E1E313E6B00EF01C7 /* JService.h */,
 				E894FD6F1E313E6B00EF01C7 /* JService.m */,
 				E894FD571E31385C00EF01C7 /* Main.storyboard */,
@@ -184,6 +184,7 @@
 				2C3407851E31477A000B2FE2 /* CustomImageView.m in Sources */,
 				E894FD5C1E31385C00EF01C7 /* TriviaGame.xcdatamodeld in Sources */,
 				E894FD561E31385C00EF01C7 /* ViewController.m in Sources */,
+				E894FD731E31559D00EF01C7 /* TriviaQuestion.m in Sources */,
 				E894FD531E31385C00EF01C7 /* AppDelegate.m in Sources */,
 				E894FD701E313E6B00EF01C7 /* JService.m in Sources */,
 				E894FD501E31385C00EF01C7 /* main.m in Sources */,
