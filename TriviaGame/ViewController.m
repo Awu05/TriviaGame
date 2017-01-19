@@ -10,6 +10,7 @@
 
 #import "ViewController.h"
 #include <stdlib.h>
+#import "KaushikViewController.h"
 
 @interface ViewController ()
 
@@ -33,8 +34,11 @@
     // ==============================================
     
     // Nav setup
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     self.title = @"Kaushikpardy";
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(gameReset)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(testK)];
     
     
     // Player Profile Image
@@ -55,6 +59,12 @@
     // Reset the game
 }
 
+-(void) testK {
+    // Testing KaushikVC
+    KaushikViewController *kVC = [[KaushikViewController alloc]init];
+    [self.navigationController pushViewController:kVC animated:YES];
+}
+
 // This method triggers the question VC
 -(void) questionBtnPrsd {
     QuestionViewController *questionVC = [[QuestionViewController alloc]init];
@@ -63,6 +73,12 @@
     [self.navigationController pushViewController:questionVC animated:YES];
     
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 // JC Methods End
 
 // Andy Stuff

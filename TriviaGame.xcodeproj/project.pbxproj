@@ -65,9 +65,9 @@
 		1F7FA3F31E315C5200894E64 /* KaushikVC */ = {
 			isa = PBXGroup;
 			children = (
+				1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */,
 				1F7FA3FD1E315D5D00894E64 /* KaushikViewController.h */,
 				1F7FA3FE1E315D5D00894E64 /* KaushikViewController.m */,
-				1F7FA3FF1E315D5D00894E64 /* KaushikViewController.xib */,
 			);
 			name = KaushikVC;
 			sourceTree = "<group>";
