@@ -23,7 +23,6 @@
     // Andy
     self.jServiceArray = [[NSMutableArray alloc] init];
     self.questionsArry = [[NSMutableArray alloc] init];
-    
     [self getJServiceCategory];
     // Andy End
     
