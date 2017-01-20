@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitAnswerBtn;
+@property (weak, nonatomic) IBOutlet UIView *answerView;
+@property (weak, nonatomic) IBOutlet UIView *topView;
 
 // Timer
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
