@@ -22,11 +22,7 @@
     // Do any additional setup after loading the view.
     
     self.questionLabel.text = self.question;
-}
-
-- (IBAction)submitAnswerBtn:(id)sender {
-}
-
+    
     // Custom Nav Buttons
     UIImage *buttonImage = [UIImage imageNamed:@"back.png"];
     buttonImage = [buttonImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
@@ -49,8 +45,11 @@
     // Add gesture recognition for exiting edit mode
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.topView addGestureRecognizer:tap];
-
 }
+
+- (IBAction)submitAnswerBtn:(id)sender {
+}
+
 
 -(void)viewDidUnload {
     [super viewDidUnload];
