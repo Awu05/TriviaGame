@@ -73,6 +73,7 @@
                                             self.timerz = nil;
                                             
                                             KaushikViewController *kVC = [[KaushikViewController alloc]init];
+                                            kVC.answer = self.correctAnswer;
                                             [self.navigationController pushViewController:kVC animated:YES];
                                             
                                         }];

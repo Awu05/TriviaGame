@@ -35,9 +35,9 @@
     // Randomized Responses
     NSInteger responseID = arc4random() % 6;
     NSString *answerString = @"";
-    NSString *answer = @""; // needs to be updated with the right var
+    
     if (responseID == 5) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"kauCorrect" object:nil];        answerString = [NSString stringWithFormat:@"This is easy, the answer is %@", answer];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"kauCorrect" object:nil];        answerString = [NSString stringWithFormat:@"This is easy, the answer is %@", self.answer];
     }
     else {
         answerString = [self.responses objectAtIndex:(int) responseID];

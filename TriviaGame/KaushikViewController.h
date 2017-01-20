@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIView *scoreView;
 @property (weak, nonatomic) IBOutlet UIButton *incorrectFlag;
 
+@property (nonatomic, retain) NSString *answer;
+
 - (IBAction)continueBtnPrsd:(id)sender;
 
 @end
