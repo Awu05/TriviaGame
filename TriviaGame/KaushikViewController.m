@@ -37,7 +37,7 @@
     NSString *answerString = @"";
     NSString *answer = @""; // needs to be updated with the right var
     if (responseID == 5) {
-        answerString = [NSString stringWithFormat:@"This is easy, the answer is %@", answer];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"kauCorrect" object:nil];        answerString = [NSString stringWithFormat:@"This is easy, the answer is %@", answer];
     }
     else {
         answerString = [self.responses objectAtIndex:(int) responseID];

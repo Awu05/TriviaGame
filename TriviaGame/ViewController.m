@@ -38,6 +38,12 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startCat3:) name:@"category3" object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(correctAns:) name:@"playerCorrect" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(incorrectAns:) name:@"playerIncorrect" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kauCorrectAns:) name:@"kauCorrect" object:nil];
+    
     [self generateRandNum:0 :10 ];
     
     [self getJServiceCategory];
@@ -155,6 +161,24 @@
     self.cat1Start = true;
     
     
+    
+}
+
+- (void)correctAns:(NSNotification *)note {
+    int score = [self.player1ScoreLabel.text intValue];
+    self.player1ScoreLabel.text = [NSString stringWithFormat:@"%d", score + 100];
+    
+}
+
+- (void)incorrectAns:(NSNotification *)note {
+    int score = [self.player1ScoreLabel.text intValue];
+    self.player1ScoreLabel.text = [NSString stringWithFormat:@"%d", score - 100];
+    
+}
+
+- (void)kauCorrectAns:(NSNotification *)note {
+    int score = [self.player2ScoreLabel.text intValue];
+    self.player2ScoreLabel.text = [NSString stringWithFormat:@"%d", score + 100];
     
 }
 
@@ -282,10 +306,10 @@
                                                            error:&error];
     
     NSArray* questionArr = [json objectForKey:@"clues"];
-    NSLog(@"QuestionArray Count: %lu\n", (unsigned long)[questionArr count]);
+    //NSLog(@"QuestionArray Count: %lu\n", (unsigned long)[questionArr count]);
     
     if([self.questionsArry count] > 0) {
-        NSLog(@"Clearing Questions Array");
+        //NSLog(@"Clearing Questions Array");
         [self.questionsArry removeAllObjects];
     }
     
@@ -350,6 +374,8 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category1Array[0];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
+    NSLog(@"Answer: %@\n", self.question.answer);
     
     [self.navigationController
      pushViewController:self.qVC
@@ -360,6 +386,8 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category1Array[1];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
+    NSLog(@"Answer: %@\n", self.question.answer);
     
     [self.navigationController
      pushViewController:self.qVC
@@ -370,6 +398,8 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category1Array[2];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
+    NSLog(@"Answer: %@\n", self.question.answer);
     
     [self.navigationController
      pushViewController:self.qVC
@@ -380,6 +410,8 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category1Array[3];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
+    NSLog(@"Answer: %@\n", self.question.answer);
     
     [self.navigationController
      pushViewController:self.qVC
@@ -390,6 +422,8 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category1Array[4];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
+    NSLog(@"Answer: %@\n", self.question.answer);
     
     [self.navigationController
      pushViewController:self.qVC
@@ -399,6 +433,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category2Array[0];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -409,6 +444,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category2Array[1];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -419,6 +455,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category2Array[2];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -429,6 +466,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category2Array[3];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -439,6 +477,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category2Array[4];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -448,6 +487,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category3Array[0];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -458,6 +498,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category3Array[1];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -468,6 +509,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category3Array[2];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -478,6 +520,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category3Array[3];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC
@@ -488,6 +531,7 @@
     self.qVC = [[QuestionViewController alloc] init];
     self.question = self.category3Array[4];
     self.qVC.question = self.question.question;
+    self.qVC.correctAnswer = self.question.answer;
     
     [self.navigationController
      pushViewController:self.qVC

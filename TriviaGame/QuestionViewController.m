@@ -40,7 +40,7 @@
     
     // Timer
     self.counterSecond = 20;
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+    self.timerz = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     
     // Add gesture recognition for exiting edit mode
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
@@ -48,6 +48,40 @@
 }
 
 - (IBAction)submitAnswerBtn:(id)sender {
+    if([self.correctAnswer.lowercaseString isEqualToString:self.answerTextField.text.lowercaseString]) {
+        UIAlertController *alerController = [UIAlertController alertControllerWithTitle:@"Correct!" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+                                        {
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:@"playerCorrect" object:nil];
+                                            
+                                            [self.navigationController popViewControllerAnimated:YES];
+                                        }];
+        
+        [alerController addAction:confirmAction];
+        
+        [self presentViewController:alerController animated:YES completion:nil];
+    }
+    else {
+        UIAlertController *alerController = [UIAlertController alertControllerWithTitle:@"Incorrect!" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+                                        {
+                                            [[NSNotificationCenter defaultCenter] postNotificationName:@"playerIncorrect" object:nil];
+                                            
+                                            [self.timerz invalidate];
+                                            self.timerz = nil;
+                                            
+                                            KaushikViewController *kVC = [[KaushikViewController alloc]init];
+                                            [self.navigationController pushViewController:kVC animated:YES];
+                                            
+                                        }];
+        
+        [alerController addAction:confirmAction];
+        
+        [self presentViewController:alerController animated:YES completion:nil];
+    }
+    
 }
 
 

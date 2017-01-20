@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 
+@property (nonatomic, retain) NSString *correctAnswer;
+
 @property (weak, nonatomic) IBOutlet UIButton *submitAnswerBtn;
 @property (weak, nonatomic) IBOutlet UIView *answerView;
 @property (weak, nonatomic) IBOutlet UIView *topView;
@@ -20,6 +22,7 @@
 // Timer
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property int counterSecond;
+@property NSTimer *timerz;
 
 @property (nonatomic, retain) NSString *question;
 
