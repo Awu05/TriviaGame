@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Kaushik's Turn";
+    self.navigationItem.hidesBackButton = YES;
+    
     self.counterSecond = 10;
     
     // JC: These are responses Kaushik give
@@ -77,6 +80,12 @@
 
 }
     
+-(void)popAllVC {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
+- (IBAction)continueBtnPrsd:(id)sender {
+    [self popAllVC];
+}
 
 @end

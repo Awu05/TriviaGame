@@ -7,6 +7,7 @@
 //
 
 #import "QuestionViewController.h"
+#import "KaushikViewController.h"
 
 @interface QuestionViewController ()
 
@@ -16,11 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    // Custom Back Button in Nav
+
+    // Custom Nav Buttons
     UIImage *buttonImage = [UIImage imageNamed:@"back.png"];
-    // Change rendering mode to allow tint color
     buttonImage = [buttonImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -33,6 +32,22 @@
     
     UIBarButtonItem *customBarItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = customBarItem;
+    
+    // Timer
+    self.counterSecond = 20;
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
+    
+}
+
+
+-(void)timer {
+    self.timerLabel.text = [NSString stringWithFormat:@"%d", self.counterSecond];
+    self.counterSecond--;
+    if (self.counterSecond == 0) {
+        KaushikViewController *kVC = [[KaushikViewController alloc]init];
+        [self.navigationController pushViewController:kVC animated:YES];
+
+    }
     
 }
 

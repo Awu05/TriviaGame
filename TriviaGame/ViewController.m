@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #include <stdlib.h>
 #import "KaushikViewController.h"
+#import "QuestionViewController.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.category1Title.backgroundColor = UIColorFromRGB(0x454545);
+    self.category2Title.backgroundColor = UIColorFromRGB(0x454545);
+    self.category3Title.backgroundColor = UIColorFromRGB(0x454545);
+    
     
     // Andy
     self.jServiceArray = [[NSMutableArray alloc] init];
@@ -53,7 +57,7 @@
     self.title = @"Kaushikpardy";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(gameReset)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(testK)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(testVC)];
     
     
     // Player Profile Image
@@ -74,10 +78,11 @@
     // Reset the game
 }
 
--(void) testK {
+-(void) testVC {
     // Testing KaushikVC
+    QuestionViewController *qVC = [[QuestionViewController alloc]init];
     KaushikViewController *kVC = [[KaushikViewController alloc]init];
-    [self.navigationController pushViewController:kVC animated:YES];
+    [self.navigationController pushViewController:qVC animated:YES];
 }
 
 // This method triggers the question VC

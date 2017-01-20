@@ -13,6 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitAnswerBtn;
+
+// Timer
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+@property int counterSecond;
 
 @end
