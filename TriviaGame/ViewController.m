@@ -158,7 +158,7 @@
     }
     
     [self getQuestion:self.category1];
-    self.cat1Start = true;
+    self.cat1Start = YES;
     
     
     
@@ -189,6 +189,10 @@
                                                   object:nil];
     self.category1Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     
+    for (TriviaQuestion *quest in self.category1Array) {
+        NSLog(@"Cat Array 1 Q: %@\nA: %@\n", quest.question, quest.answer);
+    }
+    
     [self getQuestion:self.category2];
     self.cat2Start = true;
     self.cat1Start = false;
@@ -202,6 +206,10 @@
                                                   object:nil];
     self.category2Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     
+    for (TriviaQuestion *quest in self.category2Array) {
+        NSLog(@"Cat Array 2 Q: %@\nA: %@\n", quest.question, quest.answer);
+    }
+    
     [self getQuestion:self.category3];
     self.cat3Start = true;
     self.cat2Start = false;
@@ -214,6 +222,10 @@
                                                   object:nil];
     self.category3Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     self.cat3Start = false;
+    
+    for (TriviaQuestion *quest in self.category3Array) {
+        NSLog(@"Cat Array 3 Q: %@\nA: %@\n", quest.question, quest.answer);
+    }
 }
 
 - (void) getJServiceCategory {
@@ -307,12 +319,13 @@
     
     NSArray* questionArr = [json objectForKey:@"clues"];
     //NSLog(@"QuestionArray Count: %lu\n", (unsigned long)[questionArr count]);
-    
+    /*
     if([self.questionsArry count] > 0) {
         //NSLog(@"Clearing Questions Array");
         [self.questionsArry removeAllObjects];
     }
-    
+    */
+    NSMutableArray *testArray = [[NSMutableArray alloc] init];
     
     for (NSDictionary *element in questionArr) {
         NSString *question = [element objectForKey:@"question"];
@@ -330,24 +343,28 @@
         
         TriviaQuestion *newQuestion = [[TriviaQuestion alloc] initWithQuestion:question andAnswer:answer andPointValue:points];
         
-        [self.questionsArry addObject:newQuestion];
+        [testArray addObject:newQuestion];
     }
+    
+    self.questionsArry = [[NSMutableArray alloc] initWithArray:testArray];
     
     if(self.cat1Start == true) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"category1" object:nil];
+        
     }
     
-    if(self.cat2Start == true) {
+    else if(self.cat2Start == true) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"category2" object:nil];
     }
     
-    if(self.cat3Start == true) {
+    else if(self.cat3Start == true) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"category3" object:nil];
     }
     //NSLog(@"%@\n Count: %lu", self.questionsArry, (unsigned long)[self.questionsArry count]);
     
     //TriviaQuestion *test = self.questionsArry[0];
     //NSLog(@"Question: %@\nAnswer:%@\nValue:%d", test.question, test.answer, test.value);
+    
     
 }
 
