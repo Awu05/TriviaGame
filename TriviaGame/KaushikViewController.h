@@ -17,6 +17,8 @@
 @property (strong, nonatomic) NSArray *responses;
 @property (weak, nonatomic) IBOutlet CustomImageView *kProfileImageView;
 @property (weak, nonatomic) IBOutlet UILabel *kResponseLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UIView *scoreView;
 
 
 @end

@@ -43,6 +43,10 @@
                    ^{
                        [self animateLabelShowText:answerString characterDelay:0.05];
                    });
+    // Score Label
+    self.scoreView.layer.cornerRadius = self.scoreView.frame.size.width / 2;
+    self.scoreView.layer.borderWidth = 3.0f;
+    self.scoreView.layer.borderColor = [[UIColor whiteColor] CGColor];
     
     // Timer
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
