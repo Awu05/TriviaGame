@@ -33,6 +33,21 @@
     // JC
     // ==============================================
     
+    // Ask for the player's name
+    UIAlertController *alerController = [UIAlertController alertControllerWithTitle:@"Welcome to Kaushikpardy" message:@"Please Enter your Player Name:" preferredStyle:UIAlertControllerStyleAlert];
+    [alerController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Player Name";
+    }];
+    
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"Let's Go!" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+    {
+        self.player1NameLabel.text = alerController.textFields[0].text;
+    }];
+    
+    [alerController addAction:confirmAction];
+
+    [self presentViewController:alerController animated:YES completion:nil];
+    
     // Nav setup
     self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
     self.title = @"Kaushikpardy";
@@ -81,7 +96,13 @@
 
 // JC Methods End
 
-// Andy Stuff
+
+// ================================================================================================
+//
+#pragma mark - Andy's Methods
+//
+// ================================================================================================
+
 
 - (void) startGame {
     [self generateRandNum:1 :10 ];

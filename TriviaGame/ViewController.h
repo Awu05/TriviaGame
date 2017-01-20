@@ -12,7 +12,7 @@
 #import "TriviaQuestion.h"
 #import "JService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate>
 
 // ==============================================
 // JC's Properties
@@ -33,6 +33,7 @@
 
 // Scoreboard
 // P1
+@property (strong, nonatomic) NSString *playerName;
 @property (weak, nonatomic) IBOutlet CustomImageView *player1ProfImageView;
 @property (weak, nonatomic) IBOutlet UILabel *player1ScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *player1NameLabel;
