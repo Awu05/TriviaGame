@@ -23,6 +23,8 @@
 
 @property (nonatomic, retain) NSString *answer;
 
+@property BOOL isTimeOut;
+
 - (IBAction)continueBtnPrsd:(id)sender;
 
 @end

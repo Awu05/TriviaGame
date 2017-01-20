@@ -74,6 +74,7 @@
                                             
                                             KaushikViewController *kVC = [[KaushikViewController alloc]init];
                                             kVC.answer = self.correctAnswer;
+                                            kVC.isTimeOut = false;
                                             [self.navigationController pushViewController:kVC animated:YES];
                                             
                                         }];
@@ -96,6 +97,8 @@
     self.counterSecond--;
     if (self.counterSecond == 0) {
         KaushikViewController *kVC = [[KaushikViewController alloc]init];
+        kVC.answer = self.correctAnswer;
+        kVC.isTimeOut = true;
         [self.navigationController pushViewController:kVC animated:YES];
 
     }

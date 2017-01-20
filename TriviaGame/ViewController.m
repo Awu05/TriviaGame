@@ -189,10 +189,6 @@
                                                   object:nil];
     self.category1Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     
-    for (TriviaQuestion *quest in self.category1Array) {
-        NSLog(@"Cat Array 1 Q: %@\nA: %@\n", quest.question, quest.answer);
-    }
-    
     [self getQuestion:self.category2];
     self.cat2Start = true;
     self.cat1Start = false;
@@ -206,10 +202,6 @@
                                                   object:nil];
     self.category2Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     
-    for (TriviaQuestion *quest in self.category2Array) {
-        NSLog(@"Cat Array 2 Q: %@\nA: %@\n", quest.question, quest.answer);
-    }
-    
     [self getQuestion:self.category3];
     self.cat3Start = true;
     self.cat2Start = false;
@@ -222,10 +214,6 @@
                                                   object:nil];
     self.category3Array = [[NSMutableArray alloc] initWithArray:self.questionsArry];
     self.cat3Start = false;
-    
-    for (TriviaQuestion *quest in self.category3Array) {
-        NSLog(@"Cat Array 3 Q: %@\nA: %@\n", quest.question, quest.answer);
-    }
 }
 
 - (void) getJServiceCategory {

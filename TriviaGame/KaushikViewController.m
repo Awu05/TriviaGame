@@ -58,6 +58,15 @@
     
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:(BOOL)animated];
+    if(self.isTimeOut) {
+        self.incorrectFlag.hidden = true;
+    } else {
+        self.incorrectFlag.hidden = false;
+    }
+}
+
 - (void)animateLabelShowText:(NSString*)newText characterDelay:(NSTimeInterval)delay
 {
     [self.kResponseLabel setText:@""];
