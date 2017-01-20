@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Kaushik's Turn";
+    self.navigationItem.hidesBackButton = YES;
+    
     self.counterSecond = 10;
     
     // JC: These are responses Kaushik give
@@ -38,11 +41,17 @@
     }
     else {
         answerString = [self.responses objectAtIndex:(int) responseID];
+        self.scoreLabel.text = @"PASS";
+        self.scoreView.backgroundColor = [UIColor darkGrayColor];
     }
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0),
                    ^{
                        [self animateLabelShowText:answerString characterDelay:0.05];
                    });
+    // Score Label
+    self.scoreView.layer.cornerRadius = self.scoreView.frame.size.width / 2;
+    self.scoreView.layer.borderWidth = 3.0f;
+    self.scoreView.layer.borderColor = [[UIColor whiteColor] CGColor];
     
     // Timer
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timer) userInfo:nil repeats:YES];
@@ -73,6 +82,12 @@
 
 }
     
+-(void)popAllVC {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
+- (IBAction)continueBtnPrsd:(id)sender {
+    [self popAllVC];
+}
 
 @end
