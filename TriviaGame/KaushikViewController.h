@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *kResponseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIView *scoreView;
+@property (weak, nonatomic) IBOutlet UIButton *incorrectFlag;
 
 - (IBAction)continueBtnPrsd:(id)sender;
 

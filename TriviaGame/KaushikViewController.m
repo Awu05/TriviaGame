@@ -41,6 +41,8 @@
     }
     else {
         answerString = [self.responses objectAtIndex:(int) responseID];
+        self.scoreLabel.text = @"PASS";
+        self.scoreView.backgroundColor = [UIColor darkGrayColor];
     }
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0),
                    ^{
