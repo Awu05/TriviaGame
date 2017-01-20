@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.questionLabel.text = self.question;
 }
 
+- (IBAction)submitAnswerBtn:(id)sender {
+}
 @end

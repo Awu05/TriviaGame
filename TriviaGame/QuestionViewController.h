@@ -12,7 +12,10 @@
 @property (strong, nonatomic) IBOutlet UIView *questionView;
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
-@property (weak, nonatomic) IBOutlet UIButton *submitAnswerBtn;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+
+@property (nonatomic, retain) NSString *question;
+
+- (IBAction)submitAnswerBtn:(id)sender;
 
 @end

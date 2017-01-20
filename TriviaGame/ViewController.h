@@ -18,11 +18,6 @@
 // JC's Properties
 // ==============================================
 
-// Jeopardy Board Title Labels
-@property (weak, nonatomic) IBOutlet UILabel *catTitleLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *catTitleLabel2;
-@property (weak, nonatomic) IBOutlet UILabel *catTitleLabel3;
-
 // Question Buttons
 // Row 1
 @property (weak, nonatomic) IBOutlet UIButton *questionBtn1c200;
@@ -49,7 +44,22 @@
 @property (retain, nonatomic) NSMutableArray *questionsArry;
 @property (retain, nonatomic) NSMutableArray *jServiceArray;
 
+@property (retain, nonatomic) JService *category1;
+@property (retain, nonatomic) JService *category2;
+@property (retain, nonatomic) JService *category3;
+
+@property (retain, nonatomic) NSMutableArray *category1Array;
+@property (retain, nonatomic) NSMutableArray *category2Array;
+@property (retain, nonatomic) NSMutableArray *category3Array;
+
+@property (retain, nonatomic) QuestionViewController *qVC;
+@property (retain, nonatomic) TriviaQuestion *question;
+
 @property (retain, nonatomic) NSMutableArray *randArray;
+
+@property BOOL cat1Start;
+@property BOOL cat2Start;
+@property BOOL cat3Start;
 
 - (void) getJServiceCategory;
 - (void) parseJServiceData: (NSData*) data;
